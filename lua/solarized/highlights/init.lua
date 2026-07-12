@@ -165,10 +165,10 @@ M.set_highlight = function(colors, config)
   nvim_set_hl('QuickFixLine', { fg = colors.base0, bg = colors.base03 })
   nvim_set_hl('Search', { fg = colors.base1, bg = colors.mix_base1, bold = true })
   nvim_set_hl('SpecialKey', { link = 'NonText' })
-  nvim_set_hl('SpellBad', { underline = true, strikethrough = true })
-  nvim_set_hl('SpellCap', { fg = colors.diag_hint })
+  nvim_set_hl('SpellBad', { undercurl = true, sp = colors.diag_error })
+  nvim_set_hl('SpellCap', { undercurl = true, sp = colors.diag_hint })
   nvim_set_hl('SpellLocal', { link = 'SpellCap' })
-  nvim_set_hl('SpellRare', { fg = colors.diag_warning })
+  nvim_set_hl('SpellRare', { undercurl = true, sp = colors.diag_warning })
   nvim_set_hl('StatusLine', { fg = colors.base1, bg = colors.base04 })
   nvim_set_hl('StatusLineNC', { fg = colors.base01, bg = colors.base04 })
   nvim_set_hl('TabLine', { fg = colors.base01, bg = colors.base04 })
@@ -260,7 +260,7 @@ M.set_highlight = function(colors, config)
     nvim_set_hl('@markup.quote', { fg = colors.green })
     nvim_set_hl('@markup.math', { fg = colors.violet })
     nvim_set_hl('@markup.environment', { link = 'Comment' })
-    nvim_set_hl('@markup.link', { link = 'Underlined' })
+    nvim_set_hl('@markup.link', { link = 'Constant' })
     nvim_set_hl('@markup.link.label', { link = 'Constant' })
     nvim_set_hl('@markup.link.url', { link = 'Underlined' })
     nvim_set_hl('@markup.raw', { fg = colors.cyan })
@@ -328,26 +328,11 @@ M.set_highlight = function(colors, config)
       { fg = colors.diag_ok },
       { error_lens = config.error_lens.text }
     )
-    nvim_set_hl(
-      'DiagnosticUnderlineError',
-      { fg = colors.diag_error, underline = true, sp = colors.diag_error }
-    )
-    nvim_set_hl(
-      'DiagnosticUnderlineWarn',
-      { fg = colors.diag_warning, underline = true, sp = colors.diag_warning }
-    )
-    nvim_set_hl(
-      'DiagnosticUnderlineInfo',
-      { fg = colors.diag_info, underline = true, sp = colors.diag_info }
-    )
-    nvim_set_hl(
-      'DiagnosticUnderlineHint',
-      { fg = colors.diag_hint, underline = true, sp = colors.diag_hint }
-    )
-    nvim_set_hl(
-      'DiagnosticUnderlineOk',
-      { fg = colors.diag_ok, underline = true, sp = colors.diag_ok }
-    )
+    nvim_set_hl('DiagnosticUnderlineError', { undercurl = true, sp = colors.diag_error })
+    nvim_set_hl('DiagnosticUnderlineWarn', { undercurl = true, sp = colors.diag_warning })
+    nvim_set_hl('DiagnosticUnderlineInfo', { undercurl = true, sp = colors.diag_info })
+    nvim_set_hl('DiagnosticUnderlineHint', { undercurl = true, sp = colors.diag_hint })
+    nvim_set_hl('DiagnosticUnderlineOk', { undercurl = true, sp = colors.diag_ok })
     nvim_set_hl(
       'DiagnosticSignError',
       { fg = colors.diag_error, bg = signcolumn.bg },
