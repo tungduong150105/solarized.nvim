@@ -14,14 +14,10 @@ M.set_variant = function(opts)
       transparent = config.transparent.enabled,
     })
     nvim_set_hl('FloatTitle', { fg = colors.mix_blue, bg = colors.blue })
-    nvim_set_hl(
-      'SignColumn',
-      { fg = colors.base01, bg = colors.base2 },
-      { transparent = config.transparent.enabled }
-    )
+    nvim_set_hl('SignColumn', { link = 'Normal' })
     nvim_set_hl(
       'LineNr',
-      { fg = colors.base01, bg = colors.base2 },
+      { fg = colors.base01, bg = colors.base3 },
       { transparent = config.transparent.enabled }
     )
     nvim_set_hl(

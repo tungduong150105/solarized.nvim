@@ -105,7 +105,7 @@ M.set_highlight = function(colors, config)
   --   { transparent = config.transparent.enabled }
   -- )
   nvim_set_hl('Folded', { fg = colors.base00, bg = colors.base2 })
-  nvim_set_hl('FoldColumn', { fg = colors.base00, bg = colors.base2 })
+  nvim_set_hl('FoldColumn', { fg = colors.base00, bg = colors.base3 })
   -- nvim_set_hl(
   --   'SignColumn',
   --   { fg = colors.base00, bg = colors.base2 },
