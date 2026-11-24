@@ -56,6 +56,7 @@
 ---@field leap? boolean
 ---@field mason? boolean
 ---@field flash? boolean
+---@field snacks? boolean
 
 ---@class solarized.error_lens
 ---@field text? boolean
@@ -137,5 +138,6 @@ return {
     gitgutter = true,
     mason = true,
     flash = true,
+    snacks = true,
   },
 }

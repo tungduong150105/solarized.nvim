@@ -794,6 +794,11 @@ M.set_highlight = function(colors, config)
     nvim_set_hl('FlashCurrent', { fg = colors.red })
   end
 
+  if config.plugins.snacks then
+    -- tree guides default to LineNr; drop its bg so they blend with the picker window
+    nvim_set_hl('SnacksPickerTree', { fg = colors.base01 })
+  end
+
   if config.on_highlights then
     local highlights = config.on_highlights(colors, color)
 

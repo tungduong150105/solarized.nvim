@@ -218,6 +218,7 @@ require('solarized').setup({
     gitgutter = true,
     mason = true,
     flash = true,
+    snacks = true,
   },
 })
 

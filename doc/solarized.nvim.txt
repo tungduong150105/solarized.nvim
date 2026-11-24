@@ -243,6 +243,7 @@ DEFAULT CONFIG                                 *solarized.nvim-default-config*
         gitgutter = true,
         mason = true,
         flash = true,
+        snacks = true,
       },
     })
     
