@@ -792,6 +792,12 @@ M.set_highlight = function(colors, config)
     nvim_set_hl('SnacksPickerTree', { fg = colors.base01 })
     -- indent guides default to NonText (base01), too strong on a light bg; 40% lighter
     nvim_set_hl('SnacksIndent', { fg = color.blend(colors.base01, colors.base3, 0.6) })
+    -- matches default to Special (plain violet), easy to miss among syntax colors
+    nvim_set_hl('SnacksPickerMatch', {
+      fg = colors.orange,
+      bg = color.blend(colors.orange, colors.base3, 0.2),
+      bold = true,
+    })
   end
 
   if config.on_highlights then
