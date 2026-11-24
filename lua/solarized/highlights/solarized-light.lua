@@ -790,6 +790,8 @@ M.set_highlight = function(colors, config)
   if config.plugins.snacks then
     -- tree guides default to LineNr; drop its bg so they blend with the picker window
     nvim_set_hl('SnacksPickerTree', { fg = colors.base01 })
+    -- indent guides default to NonText (base01), too strong on a light bg; 40% lighter
+    nvim_set_hl('SnacksIndent', { fg = color.blend(colors.base01, colors.base3, 0.6) })
   end
 
   if config.on_highlights then
