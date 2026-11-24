@@ -7,7 +7,7 @@ M.set_variant = function(opts)
   if config.variant == 'winter' then
     nvim_set_hl(
       'WinSeparator',
-      { fg = colors.cyan, bg = colors.base4 },
+      { fg = colors.cyan, bg = colors.base3 },
       { transparent = config.transparent.enabled }
     )
     nvim_set_hl('FloatBorder', { fg = colors.cyan, bg = colors.base3 }, {
@@ -77,7 +77,7 @@ M.set_variant = function(opts)
   elseif config.variant == 'summer' then
     nvim_set_hl(
       'WinSeparator',
-      { fg = colors.blue, bg = colors.base4 },
+      { fg = colors.blue, bg = colors.base3 },
       { transparent = config.transparent.enabled }
     )
     nvim_set_hl('FloatBorder', { fg = colors.blue, bg = colors.base3 }, {
@@ -147,7 +147,7 @@ M.set_variant = function(opts)
   elseif config.variant == 'autumn' then
     nvim_set_hl(
       'WinSeparator',
-      { fg = colors.blue, bg = colors.base4 },
+      { fg = colors.blue, bg = colors.base3 },
       { transparent = config.transparent.enabled }
     )
     nvim_set_hl('FloatBorder', { fg = colors.blue, bg = colors.base3 }, {
@@ -217,7 +217,7 @@ M.set_variant = function(opts)
   elseif config.variant == 'spring' then
     nvim_set_hl(
       'WinSeparator',
-      { fg = colors.blue, bg = colors.base4 },
+      { fg = colors.blue, bg = colors.base3 },
       { transparent = config.transparent.enabled }
     )
     nvim_set_hl('FloatBorder', { fg = colors.blue, bg = colors.base3 }, {
