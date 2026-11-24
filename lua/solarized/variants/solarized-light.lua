@@ -10,7 +10,7 @@ M.set_variant = function(opts)
       { fg = colors.cyan, bg = colors.base4 },
       { transparent = config.transparent.enabled }
     )
-    nvim_set_hl('FloatBorder', { fg = colors.cyan, bg = colors.base4 }, {
+    nvim_set_hl('FloatBorder', { fg = colors.cyan, bg = colors.base3 }, {
       transparent = config.transparent.enabled,
     })
     nvim_set_hl('FloatTitle', { fg = colors.mix_blue, bg = colors.blue })
@@ -80,7 +80,7 @@ M.set_variant = function(opts)
       { fg = colors.blue, bg = colors.base4 },
       { transparent = config.transparent.enabled }
     )
-    nvim_set_hl('FloatBorder', { fg = colors.blue, bg = colors.base4 }, {
+    nvim_set_hl('FloatBorder', { fg = colors.blue, bg = colors.base3 }, {
       transparent = config.transparent.enabled,
     })
     nvim_set_hl('FloatTitle', { fg = colors.mix_cyan, bg = colors.cyan })
@@ -150,7 +150,7 @@ M.set_variant = function(opts)
       { fg = colors.blue, bg = colors.base4 },
       { transparent = config.transparent.enabled }
     )
-    nvim_set_hl('FloatBorder', { fg = colors.blue, bg = colors.base4 }, {
+    nvim_set_hl('FloatBorder', { fg = colors.blue, bg = colors.base3 }, {
       transparent = config.transparent.enabled,
     })
     nvim_set_hl('FloatTitle', { fg = colors.mix_cyan, bg = colors.cyan })
@@ -220,7 +220,7 @@ M.set_variant = function(opts)
       { fg = colors.blue, bg = colors.base4 },
       { transparent = config.transparent.enabled }
     )
-    nvim_set_hl('FloatBorder', { fg = colors.blue, bg = colors.base4 }, {
+    nvim_set_hl('FloatBorder', { fg = colors.blue, bg = colors.base3 }, {
       transparent = config.transparent.enabled,
     })
     nvim_set_hl('FloatTitle', { fg = colors.mix_cyan, bg = colors.cyan })

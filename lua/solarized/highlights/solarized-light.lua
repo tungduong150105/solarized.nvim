@@ -142,7 +142,7 @@ M.set_highlight = function(colors, config)
     { fg = colors.base00, bg = colors.base3 },
     { transparent = config.transparent.normal and config.transparent.enabled }
   )
-  nvim_set_hl('NormalFloat', { fg = colors.base00, bg = colors.base4 }, {
+  nvim_set_hl('NormalFloat', { fg = colors.base00, bg = colors.base3 }, {
     transparent = config.transparent.normalfloat and config.transparent.enabled,
   })
   -- nvim_set_hl('FloatBorder', { link = 'WinSeparator' })
@@ -542,8 +542,8 @@ M.set_highlight = function(colors, config)
     nvim_set_hl('NoiceLspProgressSpinner', { fg = colors.diag_ok })
     nvim_set_hl('NoiceLspProgressClient', { fg = colors.diag_ok })
     nvim_set_hl('NoiceLspProgressTitle', { link = 'Title' })
-    nvim_set_hl('NoiceCmdlineIcon', { link = 'WinSeparator' })
-    nvim_set_hl('NoiceCmdlinePopupBorder', { link = 'WinSeparator' })
+    nvim_set_hl('NoiceCmdlineIcon', { link = 'FloatBorder' })
+    nvim_set_hl('NoiceCmdlinePopupBorder', { link = 'FloatBorder' })
     nvim_set_hl('NoiceCmdlinePopupTitle', { link = 'Title' })
   end
 
